@@ -1,1 +1,30 @@
-Nothing needs to be added to .gitignore since only a README.md file was modified and it's a source/config file.
+```
+# Compiled files
+*.class
+
+# Dependencies
+__pycache__/
+*.pyc
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Python cache
+.mypy_cache/
+.pytest_cache/
+```
