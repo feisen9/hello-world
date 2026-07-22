@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="400" height="500" fill="#f0f0f0"/>
+  
+  <!-- 圆柱体参数 -->
+  <!-- 中心点 (200, 250), 半径 80, 高度 300 -->
+  
+  <!-- 圆柱体底部椭圆（后半部分，被遮挡） -->
+  <ellipse cx="200" cy="400" rx="80" ry="30" 
+           fill="none" stroke="#999" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- 圆柱体顶部椭圆 -->
+  <ellipse cx="200" cy="100" rx="80" ry="30" 
+           fill="#d4e5f7" stroke="#4a90d9" stroke-width="2"/>
+  
+  <!-- 圆柱体左侧边线 -->
+  <line x1="120" y1="100" x2="120" y2="400" 
+        stroke="#4a90d9" stroke-width="2"/>
+  
+  <!-- 圆柱体右侧边线 -->
+  <line x1="280" y1="100" x2="280" y2="400" 
+        stroke="#4a90d9" stroke-width="2"/>
+  
+  <!-- 圆柱体底部椭圆（前半部分，可见） -->
+  <path d="M 120 400 A 80 30 0 0 0 280 400" 
+        fill="#b8d4f0" stroke="#4a90d9" stroke-width="2"/>
+  
+  <!-- 高光效果（可选，增加立体感） -->
+  <ellipse cx="200" cy="100" rx="60" ry="20" 
+           fill="none" stroke="white" stroke-width="1" opacity="0.5"/>
+  
+  <!-- 标签 -->
+  <text x="200" y="450" text-anchor="middle" 
+        font-family="Arial" font-size="16" fill="#333">
+    Cylinder (圆柱体)
+  </text>
+  
+  <!-- 尺寸标注 -->
+  <line x1="200" y1="100" x2="200" y2="400" 
+        stroke="#ff6600" stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="200" cy="250" r="3" fill="#ff6600"/>
+  
+  <text x="220" y="250" font-family="Arial" font-size="12" fill="#ff6600">
+    Height
+  </text>
+</svg>
