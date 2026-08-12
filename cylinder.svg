@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="1000" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- 定义渐变 -->
+  <defs>
+    <linearGradient id="cylinderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#888;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#eee;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#ccc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#666;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="topGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ddd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#999;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="#f5f5f5"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#333">
+    3D Cylinder (圆柱体)
+  </text>
+  
+  <!-- 圆柱体主体部分 -->
+  <rect x="250" y="200" width="300" height="600" fill="url(#cylinderGradient)" stroke="#555" stroke-width="4"/>
+  
+  <!-- 圆柱体顶部椭圆 -->
+  <ellipse cx="400" cy="200" rx="150" ry="50" fill="url(#topGradient)" stroke="#555" stroke-width="4"/>
+  
+  <!-- 圆柱体底部椭圆（只显示前半部分） -->
+  <path d="M 250 800 A 150 50 0 0 0 550 800" fill="none" stroke="#555" stroke-width="4"/>
+  
+  <!-- 高光效果 -->
+  <ellipse cx="400" cy="200" rx="100" ry="30" fill="none" stroke="#fff" stroke-width="4" opacity="0.5"/>
+  
+  <!-- 侧面高光 -->
+  <rect x="280" y="240" width="60" height="520" fill="#fff" opacity="0.2"/>
+  
+  <!-- 尺寸标注线 -->
+  <line x1="200" y1="200" x2="200" y2="800" stroke="#666" stroke-width="2" stroke-dasharray="10,10"/>
+  <line x1="190" y1="200" x2="210" y2="200" stroke="#666" stroke-width="2"/>
+  <line x1="190" y1="800" x2="210" y2="800" stroke="#666" stroke-width="2"/>
+  <text x="170" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#666" transform="rotate(-90, 170, 500)">
+    Height
+  </text>
+  
+  <!-- 半径标注 -->
+  <line x1="400" y1="840" x2="550" y2="840" stroke="#666" stroke-width="2"/>
+  <line x1="400" y1="830" x2="400" y2="850" stroke="#666" stroke-width="2"/>
+  <line x1="550" y1="830" x2="550" y2="850" stroke="#666" stroke-width="2"/>
+  <text x="475" y="870" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#666">
+    Radius
+  </text>
+  
+  <!-- 说明文字 -->
+  <text x="400" y="940" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#555">
+    SVG 3D Cylinder Illustration
+  </text>
+</svg>
