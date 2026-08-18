@@ -1,1 +1,1 @@
-Nothing needs to be added to .gitignore since only a README.md file was modified and it's a source/config file.
+Nothing needs to be added to .gitignore since only a text file (`test.txt`) was added, which doesn't match any of the common ignore patterns for compiled files, dependencies, editor files, or other artifacts.
